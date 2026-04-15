@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* MAIN */
+main {
+  background: #eee;
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+/* FLEXBOX CARDS */
+.pai {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.filho {
+  width: 300px;
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+  background: #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.filho p {
+  margin-top: 10px;
+}
+
+/* FOOTER */
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #ddd;
+}
+
+.copy {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}

@@ -1,0 +1,19 @@
+.pai {
+height: 100vh;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;/*define a direção dos itens, podendo ser row (linha), column (coluna), row-reverse (linha invertida) e column-reverse (coluna invertida)*/
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;/*permite que os itens quebrem a linha e continuem na próxima linha, caso necessário*/
+  gap: 20px;/*espaçamento entre os itens*/
+
+}
+.filho {
+  background-color: rgb(53, 63, 84);
+  height: 50px;
+  width: 150px;
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+}
