@@ -6,7 +6,7 @@
 }
 
 /* NAVBAR */
-.navbar {
+.cabecalho {
   background: #222;
   color: white;
   display: flex;
@@ -15,7 +15,7 @@
   padding: 15px 30px;
 }
 
-.navbar nav a {
+.cabecalho nav a {
   color: white;
   text-decoration: none;
   margin-left: 20px;
@@ -52,6 +52,8 @@ h2 {
   align-items: center;
   justify-content: center;
   color: #333;
+  background-image: url('https://media.tenor.com/F-A4czxQDGIAAAAM/homer-simpson-bart.gif');
+  background-size: cover;
 }
 
 .filho p {
@@ -66,7 +68,7 @@ h2 {
   background: #ddd;
 }
 
-.copy {
+.finalrodape {
   text-align: center;
   padding: 10px;
   font-size: 14px;
