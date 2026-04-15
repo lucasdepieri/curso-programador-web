@@ -1,0 +1,42 @@
+
+* {
+  margin: 0;/* margem */
+  padding: 0;/* espaçamento interno */
+  box-sizing: border-box;/* inclui bordas e preenchimento na largura e altura total dos elementos */
+}
+body {
+  font-family: cursive;/* cor de fundo */
+}
+h1 {
+  color: #418a29;/*cor do texto*/
+  font-family: 'cursive';/* tipo de fonte */
+}
+p, span {
+  color: blueviolet;/* cor do texto */
+  line-height: 1.5;/* espaçamento entre linhas */
+}
+#bloco {
+  color: chartreuse;/* cor do texto */
+  font-weight: bold;/* negrito */
+  background-color: black;/* cor de fundo */  
+  padding: 20px 10px 10px 30PX;/* espaçamento interno */
+  ; 
+  margin: 20px;/* espaçamento externo */
+  border: solid 2px red;/* borda */
+  
+
+}
+.trecho {
+  color: chocolate;
+  text-transform: uppercase;
+  text-decoration: underline;
+
+}
+a {
+  text-decoration: none;
+   color: blue;
+  font-style: italic;
+}
+a:hover {
+  color: #418a29;
+}

@@ -1,0 +1,55 @@
+header {
+  background-color: rgb(232, 245, 140);/* cor de fundo */
+  margin: 0px;/* espaçamento externo */
+}
+
+h1,h2 {
+  color: #418a29;/*cor do texto*/
+  font-family: 'cursive';/* tipo de fonte */
+  text-align: center;
+}
+p  {
+  color: blueviolet;/* cor do texto */
+  line-height: 1.5;/* espaçamento entre linhas */
+  text-align: center;
+  ;
+  border: solid 2px rgb(215, 233, 15);/* borda */
+ background-color: springgreen;
+}
+ul,ol {
+  color: chartreuse;/* cor do texto */
+  font-weight: bold;/* negrito */
+  background-color: rgb(39, 106, 239);/* cor de fundo */  
+  padding: 20px 10px 10px 30PX;/* espaçamento interno */
+  ; 
+  margin: 20px;/* espaçamento externo */
+  border: solid 2px red;/* borda */
+  text-align: center;
+  border-radius: 10px;/* borda arredondada */
+}
+body {
+  background-color: rgb(232, 245, 140) ;/* cor de fundo */
+}
+img {
+  width: 300px;/* largura da imagem */
+  height: auto;/* altura automática para manter a proporção */
+  display: block;/* exibir como bloco */
+  margin: 20px auto;/* centralizar a imagem */
+  border: solid 2px black;/* borda */
+  border-radius: 10px;/* borda arredondada */
+  width: 300px;
+  height: 200px;
+  
+}
+img:hover {
+  transform: scale(1.2);/* efeito de zoom ao passar o mouse */
+  transition: transform 0.3s ease;/* transição suave */
+  background-image: url(https://wallpapers.com/images/hd/choking-wallpaper-5vl54j9vb3mxa0jg.jpg);
+}
+img:active {
+  transform: scale(0.8);/* efeito de redução ao clicar na imagem */
+  transition: transform 0.3s ease;/* transição suave */  
+}
+
+
+
