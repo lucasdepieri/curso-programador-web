@@ -1,0 +1,22 @@
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+th {
+  background-color: rgb(11, 82, 58);
+  color: rgb(233, 234, 236);
+}
+
+button {
+  background-color: aqua;
+}
+
+button:hover {
+  background-color: brown;
+}
