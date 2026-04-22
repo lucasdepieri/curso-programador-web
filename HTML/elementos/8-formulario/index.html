@@ -7,6 +7,58 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <form action="">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+    <label for="txtnome">Nome:</label>
+    <input type="text" id="txtnome" name="txtnome" placeholder="Digite seu nome">
+
+
+    <label for="txtemail">Email:</label>
+    <input type="email" id="txtemail" name="txtemail" placeholder="Digite seu email">
+    
+    
+
+    <label for="txtsenha">Senha:</label>
+    <input type="password" id="txtsenha" name="txtsenha" placeholder="Digite sua senha">
+    
+    <label for="datanasc">Data de Nascimento:</label>
+    <input type="date" id="datanasc" name="datanasc" placeholder="Digite sua data de nascimento">
+    <label for="nasc">Nacionalidade:</label>
+    <select name="nasc" id="nasc">
+      <option value="brasileira">Brasileira</option>
+      <option value="americana">Americana</option>
+      <option value="inglesa">Inglesa</option>
+      <option value="outra">Outra</option>
+    </select>
+   
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+    </fieldset>
   
+    <fieldset>
+      <legend>Genero</legend>
+      <label for="genero">
+    <input type="radio" name="genero"id=genero value="F">Feminino
+    <input type="radio" name="genero"id=genero value="M">Masculino
+    <input type="radio" name="genero"id=genero value="O">Outro
+    </label>
+    </fieldset>
+      <fieldset>
+        <legend>Deseja receber informações?</legend>
+        <label for="inf">
+    <input type="checkbox" id="inf" name="inf" value="email">Email
+    <input type="checkbox" id="inf" name="inf" value="whatsapp">whatsapp
+    <input type="checkbox" id="inf" name="inf" value="telefone">telefone
+    </label>
+      </fieldset>
+   
+    
+    <label for="msg">Mensagem:</label>
+    <textarea name="msg" id="msg" cols="30" rows="3" placeholder="Digite sua mensagem"></textarea>
+   
+
+    <button type="submit">Enviar</button>
+  </form>
 </body>
 </html>
