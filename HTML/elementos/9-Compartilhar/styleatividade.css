@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  background: #ddd;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* MAIN */
+.container {
+  padding: 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* FORM */
+.form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #8f2302;
+}
+
+/* INFO */
+.info {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.map {
+  width: 100%;
+  height: 200px;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 15px; 
+}
+iframe {
+  width: 100%;
+  height: 100%;
+   border-radius: 10px;
+}
+
+.contact-icons {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+fieldset {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 15px;
+
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

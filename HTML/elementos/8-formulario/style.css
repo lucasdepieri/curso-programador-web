@@ -38,7 +38,7 @@ body {
     }
     fieldset {
     border-radius: 20px;
-    text-align: center;
+    padding: 20px;
     margin-bottom: 20px;
     border-color: #2144f3;
     }
@@ -49,6 +49,7 @@ body {
       width: 100%;
       max-width: 400px;
       height: 100px; 
+      background-color: rgb(130, 249, 227);
 }
 textarea:focus, 
 input:focus, 
@@ -62,3 +63,10 @@ select:focus {
       font-weight: bold;
       color: #2144f3;
     }
+    input, select{ background-color: rgb(130, 249, 227); 
+    }
+    input[type='checkbox'] {
+  color: #2144f3;
+}
+
+
