@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Animação Quadrado</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      background: #111;
+      overflow: hidden;
+    }
+
+    .quadrado {
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      position: absolute;
+      animation: mover 5s infinite alternate ease-in-out;
+  background: red;
+  transition-property: width, height;
+  transition-duration: 2s;
+    }
+
+    @keyframes mover {
+      0% {
+        left: 0;
+        transform: rotate(0deg);
+        background-color: red;
+      }
+      25% {
+        background-color: blue;
+      }
+      50% {
+        transform: rotate(180deg);
+        background-color: green;
+      }
+      75% {
+        background-color: yellow;
+      }
+      100% {
+        left: calc(100% - 80px);
+        transform: rotate(360deg);
+        background-color: purple;
+      }
+    }
+    div.quadrado:hover {
+      width: 833px;
+      height: 637px;
+      background-image: url(https://media1.tenor.com/m/ERAZ5BnWTP8AAAAC/fuckyall-whatever.gif);
+      background-size: 100% 100%;
+
+
+    
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quadrado"></div>
+
+</body>
+</html>
