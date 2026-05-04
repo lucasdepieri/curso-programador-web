@@ -1,0 +1,140 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  height: auto;
+}
+
+/* HERO */
+.hero {
+  background-image: url(img/imgcabecalho.png);
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  margin: 20px 0;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.white {
+  background: white;
+  color: black;
+}
+
+.btn.dark {
+  background: #23272a;
+  color: white;
+}
+
+/* SEÇÕES */
+
+.gray {
+  background: #f2f2f2;
+}
+
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.container.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.text p {
+  color: #555;
+}
+
+.image {
+  background-position: center;
+  flex: 1;
+  height: 400px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* FINAL */
+.final {
+  text-align: center;
+  padding: 80px 20px;
+    background: #ddd;
+}
+
+.final h2 {
+  margin-bottom: 15px;
+
+}
+
+.big-image {
+  margin-top: 30px;
+  height: 300px;
+  
+  border-radius: 20px;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container.reverse {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+}
