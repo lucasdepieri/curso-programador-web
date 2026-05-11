@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Senac</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">
+            <i class="bi bi-mortarboard-fill"></i>
+            Senac</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="text-white nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--fim do cabeçalho-->
+    <main>
+      <!-- Carousel -->
+      <section id="carrossel-cursos" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carrossel-cursos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carrossel-cursos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carrossel-cursos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <!-- slide 1 -->
+    <div class="carousel-item active">
+      <img src="https://wordpress-cms-gc-prod-assets.quero.space/uploads/2016/10/Administracao-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+        <h5>Tecnico em administração</h5>
+        <p>desenvolva suas habilidades de gestão e empreendedorismo.</p>
+      </div>
+    </div>
+    <!-- slide 2 -->
+    <div class="carousel-item">
+      <img src="https://i0.wp.com/blog.portaleducacao.com.br/wp-content/uploads/2021/05/547-Curso-ba%CC%81sico-de-Informa%CC%81tica_-Por-que-fazer_.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+        <h5>Curso de informática</h5>
+        <p>aprenda a utilizar os recursos tecnológicos de forma eficiente.</p>
+      </div>
+    </div>
+    <!-- slide 3 -->
+    <div class="carousel-item">
+      <img src="https://i1.wp.com/www.colegiopraxis.com.br/wp-content/uploads/2021/04/inform.jpg?resize=1200%2C600&ssl=1" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+        <h5>Curso de Tecnico em Informática</h5>
+        <p>domine as tecnologias da informação e desenvolva competências digitais.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Flexas anterior e próxima -->
+  <button class="carousel-control-prev" type="button" data-bs-target="carrossel-cursos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carrossel-cursos" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</section>
+<!-- cards de cursos -->
+<section class="container bg-primary mt-3 mb-5">
+  <h2>Curso em destaque</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+     <!-- card 01 -->
+    <article class="col">
+    <figure class="card h-100" >
+      <img src="https://i1.wp.com/www.colegiopraxis.com.br/wp-content/uploads/2021/04/inform.jpg?resize=1200%2C600&ssl=1" class="card-img-top" alt="...">
+      <figcaption class="card-body">
+        <h5 class="card-title">Curso de Informática</h5>
+        <p class="card-text">Aprenda a utilizar os recursos tecnológicos de forma eficiente.</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
+      </figcaption>
+    </figure>
+      
+    </article>
+    <!-- card 02 -->
+    <article class="col">
+    <figure class="card h-100" >
+      <img src="https://i1.wp.com/www.colegiopraxis.com.br/wp-content/uploads/2021/04/inform.jpg?resize=1200%2C600&ssl=1" class="card-img-top" alt="...">
+      <figcaption class="card-body">
+        <h5 class="card-title">Curso de Informática</h5>
+        <p class="card-text">Aprenda a utilizar os recursos tecnológicos de forma eficiente.</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
+      </figcaption>
+    </figure>
+      
+    </article>
+    <!-- card 03 -->
+    <article class="col">
+    <figure class="card h-100" >
+      <img src="https://i1.wp.com/www.colegiopraxis.com.br/wp-content/uploads/2021/04/inform.jpg?resize=1200%2C600&ssl=1" class="card-img-top" alt="...">
+      <figcaption class="card-body">
+        <h5 class="card-title">Curso de Informática</h5>
+        <p class="card-text">Aprenda a utilizar os recursos tecnológicos de forma eficiente.</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
+      </figcaption>
+    </figure>
+      
+    </article>
+    <!-- card 04 -->
+    <article class="col">
+    <figure class="card h-100" >
+      <img src="https://i1.wp.com/www.colegiopraxis.com.br/wp-content/uploads/2021/04/inform.jpg?resize=1200%2C600&ssl=1" class="card-img-top" alt="...">
+      <figcaption class="card-body">
+        <h5 class="card-title">Curso de Informática</h5>
+        <p class="card-text">Aprenda a utilizar os recursos tecnológicos de forma eficiente.</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
+      </figcaption>
+    </figure>
+      
+    </article>
+    <!-- card 05 -->
+    <article class="col">
+    <figure class="card h-100" >
+      <img src="https://i1.wp.com/www.colegiopraxis.com.br/wp-content/uploads/2021/04/inform.jpg?resize=1200%2C600&ssl=1" class="card-img-top" alt="...">
+      <figcaption class="card-body">
+        <h5 class="card-title">Curso de Informática</h5>
+        <p class="card-text">Aprenda a utilizar os recursos tecnológicos de forma eficiente.</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
+      </figcaption>
+    </figure>
+      
+    </article>
+    <!-- card 06 -->
+    <article class="col">
+    <figure class="card h-100" >
+      <img src="https://i1.wp.com/www.colegiopraxis.com.br/wp-content/uploads/2021/04/inform.jpg?resize=1200%2C600&ssl=1" class="card-img-top" alt="...">
+      <figcaption class="card-body">
+        <h5 class="card-title">Curso de Informática</h5>
+        <p class="card-text">Aprenda a utilizar os recursos tecnológicos de forma eficiente.</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
+      </figcaption>
+    </figure>
+      
+    </article>
+   
+
+</div>
+</section>
+<section class="container">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" >
+  <div class="col">
+  <h2>Localização</h2>
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10362.954274645825!2d-51.16193267782679!3d-23.320924118532545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb435d5b264775%3A0xfd3a2c2dc9f2232f!2sSenac%20Londrina!5e0!3m2!1spt-BR!2sbr!4v1778528755974!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </div>
+
+  <section class="container">
+  <div >
+    <h2>Contatos</h2>
+     <label for="exampleFormControlInput1" class="form-label">Nome</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+</div>
+<div >
+  <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem"></textarea>
+</div>
+</section>
+</div>
+</section>
+    </main>
+    <footer class="bg-primary text-white text-center py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="mb-0">&copy; 2026 Nome da Empresa. Todos os direitos reservados.</p>
+        <a href="#" class="text-white-50 text-decoration-none">Política de Privacidade</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
