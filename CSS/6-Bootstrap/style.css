@@ -2,3 +2,8 @@
   height: 600px;
   object-fit: cover;
 }
+.finallocalizacao {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: aquamarine;
+}
