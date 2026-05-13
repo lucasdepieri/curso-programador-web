@@ -1,0 +1,14 @@
+body {
+  background-color: aquamarine;
+}
+@media (max-width: 768px) {
+  body {
+    background-color: brown;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: blue;
+  }
+}
