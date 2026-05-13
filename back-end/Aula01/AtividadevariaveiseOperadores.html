@@ -1,0 +1,54 @@
+<!-- Exercício de Variáveis e Operadores -->
+ <!-- exercicio 1
+  Solicite que o usuário informe o nome de um aluno e, em seguida, insira três notas . Calcule a média aritmética das três notas e exiba uma mensagem com o nome do aluno e a média calculada. -->
+<!-- Exercício 1 -->
+<script>
+    let nome = prompt("Digite o nome do aluno:");
+
+    let nota1 = parseFloat(prompt("Digite a primeira nota:"));
+    let nota2 = parseFloat(prompt("Digite a segunda nota:"));
+    let nota3 = parseFloat(prompt("Digite a terceira nota:"));
+
+    let media = (nota1 + nota2 + nota3) / 3;
+    document.write(`Aluno: ${nome}  tirou as  notas<br> ${nota1}<br> ${nota2} <br>${nota3}<br> Média:<br> ${media.toFixed(2)}`);
+
+    alert(`Aluno: ${nome}\nMédia: ${media.toFixed(2)}`);
+</script>
+
+<!-- Exercício 2
+ Exercício 2:
+Solicite ao usuário que informe as dimensões de um retângulo: sua largura e altura. Em seguida, calcule a área do retângulo e exiba o resultado. -->
+<script>
+    let largura = parseFloat(prompt("Digite a largura do retângulo:"));
+    let altura = parseFloat(prompt("Digite a altura do retângulo:"));
+
+    let area = largura * altura;
+    document.write(`o retangulo de largura ${largura} e altura ${altura} tem área de : ${area.toFixed(2)}<br>`);
+    alert(`A área do retângulo é: ${area.toFixed(2)}`);
+</script>
+
+<!-- Exercício 3 
+ Peça ao usuário que insira dois números inteiros. Calcule e exiba o resultado da soma, subtração, multiplicação e divisão dos dois números.-->
+<script>
+    let num1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+    let num2 = parseInt(prompt("Digite o segundo número inteiro:"));
+
+    let soma = num1 + num2;
+    let subtracao = num1 - num2;
+    let multiplicacao = num1 * num2;
+    let divisao = num1 / num2;
+
+    document.write(`Soma: ${soma}<br>Subtração: ${subtracao}<br>Multiplicação: ${multiplicacao}<br>Divisão: ${divisao.toFixed(2)}<br>`);
+    alert(`Soma: ${soma}\nSubtração: ${subtracao}\nMultiplicação: ${multiplicacao}\nDivisão: ${divisao.toFixed(2)}`);
+</script>
+
+ <!-- Exercício 4
+  Solicite ao usuário que insira a temperatura atual em graus Celsius (valor do tipo float). Converta essa temperatura para graus Fahrenheit e exiba o resultado usando a fórmula:
+Fahrenheit = (Celsius * 9/5) + 32.
+  -->
+<script>
+    let celsius = parseFloat(prompt("Digite a temperatura em graus Celsius:"));
+    let fahrenheit = (celsius * 9/5) + 32;
+    document.write(`A temperatura em Fahrenheit é: ${fahrenheit.toFixed(2)}`);
+    alert(`A temperatura em Fahrenheit é: ${fahrenheit.toFixed(2)}`);
+</script>
