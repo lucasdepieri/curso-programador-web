@@ -52,16 +52,36 @@ Fahrenheit = (Celsius * 9/5) + 32.
     document.write(`A temperatura em Fahrenheit é: ${fahrenheit.toFixed(2)}`);
     alert(`A temperatura em Fahrenheit é: ${fahrenheit.toFixed(2)}`);
 </script>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    
-</body>
-<script src="script.js"></script>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 01</title>
+  </head>
+
+  <body>
+    <h1>Atividade 01</h1>
+    <form action="">
+      <label for="txtNome">Nome: </label>
+      <input type="text" name="txtNome" id="txtNome" />
+      <br /><br />
+
+      <label for="numN1"> Nota 01: </label>
+      <input type="number" name="numN1" id="numN1" />
+      <br /><br />
+
+      <label for="numN2"> Nota 02: </label>
+      <input type="number" name="numN2" id="numN2" />
+      <br /><br />
+
+      <label for="numN3"> Nota 03: </label>
+      <input type="number" name="numN3" id="numN3" />
+      <br /><br />
+
+      <button onclick="media()">Calcular</button>
+    </form>
+  </body>
 </html>
+
+<script src="script.js"></script>

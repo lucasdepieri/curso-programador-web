@@ -1,0 +1,77 @@
+<script>
+  // 1. Verificador de Idade para Carteira de Motorista
+//Implemente um programa que leia a idade do usuário e verifique se ele tem idade suficiente para tirar a carteira de motorista. No Brasil, a idade mínima é 18 anos. O programa deve exibir uma mensagem indicando se o usuário pode ou não tirar a carteira de motorista.
+// Entrada: idade (inteiro)
+// Saída: "Você pode tirar a carteira de motorista." ou "Você ainda não pode tirar a carteira de motorista."
+    let idade = parseInt(prompt("Digite sua idade:"));
+
+    if (idade >= 18) {
+        document.write("Você pode tirar a carteira de motorista.<br>");
+        alert("Você pode tirar a carteira de motorista. ");
+    } else {
+        document.write("Você ainda não pode tirar a carteira de motorista.<br>");
+        alert("Você ainda não pode tirar a carteira de motorista.");
+    }
+
+    // 2. Verificação de Número Par ou Ímpar Crie um programa que receba um número inteiro do usuário e verifique se ele é par ou ímpar. Utilize a estrutura if para fazer a verificação e exiba uma mensagem correspondente.
+// Entrada: número (inteiro)
+// Saída: "O número é par." ou "O número é ímpar."
+    let numero = parseInt(prompt("Digite um número inteiro:"));
+
+    if (numero % 2 === 0) {
+        document.write(`O número ${numero} é par.<br>`);
+        alert(`O número ${numero} é par.`);
+    } else {
+        document.write(`O número ${numero} é ímpar.<br>`);
+        alert(`O número ${numero} é ímpar.`);
+    }
+
+    // 3. Calculadora de Descontos em Compras (Aprimorada) Desenvolva um programa que pergunte ao usuário o valor total da compra e calcule o desconto com base nos seguintes critérios:
+    // Se o valor da compra for maior que R$ 500,00, aplique um desconto de 20%.
+    // Se o valor da compra for maior que R$ 300,00 e até R$ 500,00, aplique um desconto de 15%.
+    // Se o valor da compra for maior que R$ 100,00 e até R$ 300,00, aplique um desconto de 10%.
+    // Se o valor da compra for R$ 100,00 ou menor, não aplique desconto.
+    // O programa deve exibir o valor final da compra com o desconto aplicado, ou sem desconto, caso não atenda a nenhum dos critérios acima.
+    // Entrada: valor da compra (double)
+    // Saída: "Valor final da compra: R$ X,XX"
+    let valorCompra = parseFloat(prompt("Digite o valor total da compra:"));
+    let valorFinal;
+
+    if (valorCompra > 500) {
+        valorFinal = valorCompra * 0.8; // Aplica desconto de 20%
+    } else if (valorCompra > 300) {
+        valorFinal = valorCompra * 0.85; // Aplica desconto de 15%
+    } else if (valorCompra > 100) {
+        valorFinal = valorCompra * 0.9; // Aplica desconto de 10%
+    } else {
+        valorFinal = valorCompra; // Sem desconto
+    }
+
+    document.write(`Valor final da compra: R$ ${valorFinal.toFixed(2)} <br>`);
+    alert(`Valor final da compra: R$ ${valorFinal.toFixed(2)}`);
+
+// 4. Verificação de Temperatura para Estado da Água
+// Implemente um programa que receba uma temperatura em graus Celsius e indique o estado físico da água nessa temperatura. Considere os seguintes critérios:
+// Se a temperatura for menor que 0°C, a água está em estado sólido (gelo).
+// Se a temperatura estiver entre 0°C e 100°C (inclusive), a água está em estado líquido.
+// Se a temperatura for maior que 100°C, a água está em estado gasoso (vapor).
+// O programa deve exibir uma mensagem correspondente ao estado físico.
+// Entrada: temperatura (double)
+// Saída: "Estado da água: sólido", "Estado da água: líquido", ou "Estado da água: gasoso"
+    let temperatura = parseFloat(prompt("Digite a temperatura em graus Celsius:"));
+    let estadoAgua;
+
+    if (temperatura < 0) {
+        estadoAgua = "sólido";
+    } else if (temperatura <= 100) {
+        estadoAgua = "líquido";
+    } else {
+        estadoAgua = "gasoso";
+    }
+
+    document.write(`Estado da água : ${estadoAgua}<br>`);
+    alert(`Estado da água: ${estadoAgua}`);
+
+</script>
+
+
