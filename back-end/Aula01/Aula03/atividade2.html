@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Idade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fde402;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #049cee;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 20px;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Classificador de Idade</h1>
+
+        <form id="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            <label for="anoNascimento">Ano de Nascimento:</label>
+            <input type="number" id="anoNascimento" placeholder="Ex: 2000" required>
+
+            <button type="submit">Verificar</button>
+        </form>
+
+        <div id="resultado">
+            <h2 id="mensagem"></h2>
+            <img id="imagem" src="" alt="Imagem da faixa etária"  width="100%" height="100%">
+        </div>
+    </div>
+
+    <script src="scriptatividade2.js"></script>
+</body>
+</html>

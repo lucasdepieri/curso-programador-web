@@ -1,0 +1,36 @@
+<!-- Desenvolva um programa que use switch case para classificar filmes de acordo com a faixa etária. O programa deve pedir ao usuário para inserir a classificação etária do filme, e então exibir uma mensagem apropriada. As classificações são:
+Livre - mensagem: "Apropriado para todos os públicos."
+Violência - mensagem: "Recomendado para maiores de 12 anos."
+Adulto- mensagem: "Recomendado para maiores de 18 anos
+ -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="container">
+        <h1>Classificação Etária de Filmes</h1>
+
+        <label for="classificacao">Digite a classificação:</label>
+
+        <select id="classificacao">
+            <option value="Livre">Livre</option>
+            <option value="Violência">Violência</option>
+            <option value="Adulto">Adulto</option>
+        </select>
+
+        <button onclick="classificarFilme()">Verificar</button>
+
+        <p id="resultado"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
