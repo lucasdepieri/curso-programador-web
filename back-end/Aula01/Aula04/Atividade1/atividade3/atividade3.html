@@ -1,0 +1,88 @@
+<!-- Crie um programa que utilize switch case para calcular as tarifas de transporte público. O usuário deve inserir seu tipo de passageiro e o programa calcula a tarifa com base nessa informação. Os tipos de passageiros são:
+Estudante - mensagem: Recebe 50% de desconto na tarifa padrão.
+Idoso - mensagem: Viagem gratuita.
+Adulto - mensagem: Tarifa padrão.
+Funcionário do transporte -mensagem:  Viagem gratuita.
+ -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifa Transporte Público</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #80beed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgb(103, 241, 232);
+            padding: 25px;
+            border-radius: 10px;
+            width: 320px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Tarifa de Transporte</h2>
+
+        <select id="tipoPassageiro">
+            <option value="estudante">Estudante</option>
+            <option value="idoso">Idoso</option>
+            <option value="adulto">Adulto</option>
+            <option value="funcionario">Funcionário do transporte</option>
+        </select>
+
+        <button onclick="calcularTarifa()">
+            Verificar Tarifa
+        </button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

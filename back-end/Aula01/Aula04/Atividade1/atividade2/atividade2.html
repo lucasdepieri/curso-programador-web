@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #7dd5d8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgb(37, 87, 205);
+            padding: 2%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 100%;
+            align-items: center;
+             display: flex;
+             flex-direction: column;
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input, select, button {
+            width: 50%;
+            padding: 10px;
+            margin-top: 10px;
+            position: relative;
+            align-items: center;
+             display: flex;
+
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculadora</h2>
+
+        <input type="number" id="valor1" placeholder="Digite o primeiro valor">
+
+        <input type="number" id="valor2" placeholder="Digite o segundo valor">
+
+        <select id="operacao">
+            <option value="+">Soma</option>
+            <option value="-">Subtração</option>
+            <option value="*">Multiplicação</option>
+            <option value="/">Divisão</option>
+        </select>
+
+        <button onclick="calcular()">Calcular</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
