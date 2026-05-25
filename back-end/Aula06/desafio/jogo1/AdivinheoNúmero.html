@@ -28,28 +28,33 @@ o Difícil → 1 a 100 -->
 </head>
 <body>
 
-    <section class="container">
+    <div class="container">
         <h1>🎯 Adivinhe o Número</h1>
 
         <label for="dificuldade">Escolha a dificuldade:</label>
+
         <select id="dificuldade">
             <option value="10">Fácil (1 a 10)</option>
             <option value="50">Médio (1 a 50)</option>
-            <option value="100">Difícil (1 a 100)</option>
+            <option value="100" selected>Difícil (1 a 100)</option>
         </select>
 
-        <p id="info">Tente adivinhar o número!</p>
+        <p id="info"></p>
 
-        <input type="number" id="palpite" placeholder="Digite seu palpite">
+        <input type="number" id="palpite" placeholder="Digite um número">
 
-        <button onclick="verificarPalpite()">Enviar</button>
-        <button onclick="reiniciarJogo()">Jogar Novamente</button>
+        <button onclick="verificarPalpite()">Tentar</button>
 
         <p id="mensagem"></p>
-        <p id="tentativas">Tentativas restantes: 5</p>
 
-    </section>
+        <p>Tentativas: <span id="tentativas">0</span>/5</p>
+
+        <button id="reiniciar" onclick="reiniciarJogo()">
+            Jogar Novamente
+        </button>
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
