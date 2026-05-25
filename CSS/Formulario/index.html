@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Estilizado</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #4facfe;
+            outline: none;
+            box-shadow: 0 0 5px rgba(79,172,254,0.5);
+        }
+
+        .inline-group {
+            margin-top: 10px;
+        }
+
+        .inline-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .enviar {
+            background-color: #28a745;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .enviar:hover {
+            background-color: #218838;
+        }
+
+        .limpar {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .limpar:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Formulário de Cadastro</h1>
+
+    <form>
+
+        <!-- Dados pessoais -->
+        <h2>📋 Dados pessoais</h2>
+
+        <label>Nome completo</label>
+        <input type="text" name="nome" required>
+
+        <label>E-mail</label>
+        <input type="email" name="email" required>
+
+        <label>Senha</label>
+        <input type="password" name="senha" required>
+
+        <label>Data de nascimento</label>
+        <input type="date" name="data">
+
+        <!-- Contato -->
+        <h2>📞 Contato</h2>
+
+        <label>Telefone</label>
+        <input type="tel" name="telefone">
+
+        <!-- Preferências -->
+        <h2>🎯 Preferências</h2>
+
+        <label>Sexo</label>
+        <div class="inline-group">
+            <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+            <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+            <label><input type="radio" name="sexo" value="outro"> Outro</label>
+        </div>
+
+        <label>Interesses</label>
+        <div class="inline-group">
+            <label><input type="checkbox" name="interesses" value="tecnologia"> Tecnologia</label>
+            <label><input type="checkbox" name="interesses" value="jogos"> Jogos</label>
+            
+            <label><input type="checkbox" name="interesses" value="esportes"> Esportes</label>
+        </div>
+
+        <!-- Mensagem -->
+        <h2>📝 Mensagem</h2>
+
+        <label>Mensagem</label>
+        <textarea name="mensagem" rows="4"></textarea>
+
+        <!-- Seleção -->
+        <h2>📌 Seleção</h2>
+
+        <label>Cidade</label>
+        <select name="cidade">
+            <option value="">Selecione</option>
+            <option value="curitiba">Curitiba</option>
+            <option value="londrina">Londrina</option>
+            <option value="maringa">Maringá</option>
+        </select>
+
+        <!-- Ações -->
+        <div class="buttons">
+            <button type="submit" class="enviar">Enviar</button>
+            <button type="reset" class="limpar">Limpar</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
