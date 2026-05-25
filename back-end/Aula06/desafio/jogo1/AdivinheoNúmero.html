@@ -1,0 +1,55 @@
+<!-- 1. �� Adivinhe o Número
+Você deverá desenvolver um jogo chamado “Adivinhe o Número” utilizando HTML, CSS e JavaScript
+no navegador.
+O computador deverá sortear um número secreto entre 1 e 100.
+O jogador deverá tentar descobrir qual é esse número digitando palpites em um campo de entrada.
+Após cada tentativa, o sistema deverá informar:
+ “Muito alto!” → quando o número digitado for maior que o número secreto.
+ “Muito baixo!” → quando o número digitado for menor que o número secreto.
+ “Parabéns! Você acertou!” → quando o jogador descobrir o número correto.
+O jogo deverá possuir um limite de 5 tentativas.
+Caso o jogador ultrapasse o limite sem acertar, o sistema deverá exibir a mensagem:
+“Fim de jogo! O número era X.”
+
+Desafios extras
+ Mostrar contador de tentativas.
+ Criar botão “Jogar novamente”.
+ Implementar níveis de dificuldade:
+o Fácil → 1 a 10
+o Médio → 1 a 50
+o Difícil → 1 a 100 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="container">
+        <h1>🎯 Adivinhe o Número</h1>
+
+        <label for="dificuldade">Escolha a dificuldade:</label>
+        <select id="dificuldade">
+            <option value="10">Fácil (1 a 10)</option>
+            <option value="50">Médio (1 a 50)</option>
+            <option value="100">Difícil (1 a 100)</option>
+        </select>
+
+        <p id="info">Tente adivinhar o número!</p>
+
+        <input type="number" id="palpite" placeholder="Digite seu palpite">
+
+        <button onclick="verificarPalpite()">Enviar</button>
+        <button onclick="reiniciarJogo()">Jogar Novamente</button>
+
+        <p id="mensagem"></p>
+        <p id="tentativas">Tentativas restantes: 5</p>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
