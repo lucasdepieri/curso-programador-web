@@ -1,0 +1,78 @@
+<!-- 3. ✊✋✌ Pedra, Papel e Tesoura
+Você deverá desenvolver o jogo “Pedra, Papel e Tesoura” utilizando HTML, CSS e JavaScript no
+navegador.
+O jogo deverá funcionar da seguinte forma:
+O jogador deverá escolher uma das opções abaixo:
+● Pedra
+● Papel
+● Tesoura
+O computador deverá realizar uma escolha aleatória.
+Em seguida, o sistema deverá comparar as escolhas e determinar o resultado da rodada.
+Regras do jogo
+O sistema deverá obedecer às seguintes regras:
+● Pedra vence Tesoura
+● Tesoura vence Papel
+● Papel vence Pedra
+● Escolhas iguais resultam em empate
+Exemplos:
+Jogador Computador Resultado
+Pedra Tesoura Jogador vence
+Papel Pedra Jogador vence
+Tesoura Pedra Computador vence
+Papel Papel Empate
+Após cada rodada, o sistema deverá mostrar:
+● a escolha do jogador;
+● a escolha do computador;
+
+Públic
+o
+
+● o resultado da rodada.
+Desafios extras
+● Criar contador de vitórias.
+● Contabilizar empates.
+● Criar botão “Jogar novamente”.
+● Implementar modo “Melhor de 5 rodadas”.
+● Melhorar a interface utilizando emojis, cores e estilos CSS. -->
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra, Papel e Tesoura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🧱Pedra,🪨 Papel e ✌️ Tesoura </h1>
+
+    <div class="botoes">
+      <button onclick="jogar('Pedra')">✊ Pedra</button>
+      <button onclick="jogar('Papel')">✋ Papel</button>
+      <button onclick="jogar('Tesoura')">✌️ Tesoura</button>
+    </div>
+
+    <div class="resultado">
+      <p id="jogador">Jogador: </p>
+      <p id="computador">Computador: </p>
+      <h2 id="mensagem">Faça sua jogada!</h2>
+    </div>
+
+    <div class="placar">
+      <h3>🏆 Placar</h3>
+      <p>Jogador: <span id="pontosJogador">0</span></p>
+      <p>Computador: <span id="pontosComputador">0</span></p>
+      <p>Empates: <span id="empates">0</span></p>
+      <p>Rodadas: <span id="rodadas">0</span>/5</p>
+    </div>
+
+    <button class="reset" onclick="reiniciarJogo()">
+      🔄 Jogar Novamente
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

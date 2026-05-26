@@ -7,12 +7,12 @@ let respostaCorreta;
 let operador;
 
 // Elementos
-const vidasTexto = document.getElementById("vidas");
-const pontosTexto = document.getElementById("pontos");
-const perguntaTexto = document.getElementById("pergunta");
-const mensagemTexto = document.getElementById("mensagem");
-const inputResposta = document.getElementById("resposta");
-const botaoReiniciar = document.getElementById("reiniciar");
+let vidasTexto = document.getElementById("vidas");
+let pontosTexto = document.getElementById("pontos");
+let perguntaTexto = document.getElementById("pergunta");
+let mensagemTexto = document.getElementById("mensagem");
+let inputResposta = document.getElementById("resposta");
+let botaoReiniciar = document.getElementById("reiniciar");
 
 // Gera pergunta aleatória
 function gerarPergunta() {
@@ -21,7 +21,7 @@ function gerarPergunta() {
     numero2 = Math.floor(Math.random() * 10) + 1;
 
     // Operações possíveis
-    const operadores = ["+", "-", "*"];
+    let operadores = ["+", "-", "*"];
 
     operador = operadores[Math.floor(Math.random() * operadores.length)];
 
@@ -41,7 +41,7 @@ function gerarPergunta() {
 // Verifica resposta
 function verificarResposta() {
 
-    const respostaUsuario = Number(inputResposta.value);
+    let respostaUsuario = Number(inputResposta.value);
 
     if (inputResposta.value === "") {
         mensagemTexto.textContent = "Digite uma resposta!";
@@ -51,16 +51,20 @@ function verificarResposta() {
     if (respostaUsuario === respostaCorreta) {
         pontos++;
         mensagemTexto.textContent = "✅ Acertou!";
-    } else {
+    } else  {
         vidas--;
         mensagemTexto.textContent =
             `❌ Errou! A resposta era ${respostaCorreta}`;
+    }
+    if (vidas === 1) {
+        mensagemTexto.textContent = "⚠️ Cuidado! Você tem apenas uma vida restante.";
+       
     }
 
     atualizarPainel();
 
     inputResposta.value = "";
-    inputResposta.focus();
+    inputResposta.focus();''
 
     if (vidas > 0) {
         gerarPergunta();

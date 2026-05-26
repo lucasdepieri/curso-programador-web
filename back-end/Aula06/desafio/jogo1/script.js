@@ -3,17 +3,17 @@ let tentativas;
 let limiteTentativas = 5;
 
 // Elementos
-const mensagem = document.getElementById("mensagem");
-const tentativasTexto = document.getElementById("tentativas");
-const dificuldade = document.getElementById("dificuldade");
-const palpite = document.getElementById("palpite");
-const info = document.getElementById("info");
-const botaoReiniciar = document.getElementById("reiniciar");
+let mensagem = document.getElementById("mensagem");
+let tentativasTexto = document.getElementById("tentativas");
+let dificuldade = document.getElementById("dificuldade");
+let palpite = document.getElementById("palpite");
+let info = document.getElementById("info");
+let botaoReiniciar = document.getElementById("reiniciar");
 
 // Inicia o jogo
 function iniciarJogo() {
 
-    const maximo = Number(dificuldade.value);
+    let maximo = Number(dificuldade.value);
 
     numeroSecreto = Math.floor(Math.random() * maximo) + 1;
 
@@ -32,12 +32,13 @@ function iniciarJogo() {
     palpite.value = "";
 
     console.log("Número secreto:", numeroSecreto);
+    alert("Número secreto: " + numeroSecreto);
 }
 
 // Verifica palpite
 function verificarPalpite() {
 
-    const valor = Number(palpite.value);
+    let valor = Number(palpite.value);
 
     if (palpite.value === "") {
         mensagem.textContent = "Digite um número!";
@@ -45,6 +46,13 @@ function verificarPalpite() {
     }
 
     tentativas++;
+    if (tentativas === 2) {
+        document.getElementById("tentativas-info").style.backgroundColor = "yellow";
+    }
+    if (tentativas === 4) {
+        document.getElementById("tentativas-info").style.backgroundColor = "red";
+    }
+
 
     tentativasTexto.textContent = tentativas;
 
