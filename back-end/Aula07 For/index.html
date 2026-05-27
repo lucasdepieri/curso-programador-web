@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada e Soma dos Múltiplos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <d class="container">
+      <!-- Atividade 1: Tabuada interativa
+ Crie um programa que leia um número digitado pelo usuário e mostre a tabuada desse número de 1 até 10, utilizando for.
+
+ -->
+
+        <h1>Tabuada</h1>
+
+        <input type="number" id="numero" placeholder="Digite um número">
+
+        <button onclick="gerarTabuada()">
+            Gerar Tabuada
+        </button>
+
+        <div id="resultado"></div>
+
+        <hr>
+        <!-- Atividade 2: Soma de múltiplos
+ Crie um programa que calcule e mostre a soma de todos os números múltiplos de 3 entre 1 e 100. Use a estrutura para percorrer os números e acumular a soma.
+ -->
+
+        <h1>Soma dos Múltiplos</h1>
+        <input type="number" id="multiplosDe" placeholder="Digite o número para somar os seus  múltiplos">
+        <input type="number" id="intervalo" placeholder="Digite o limite">
+        <button onclick="somarMultiplos()">
+            Calcular Soma
+        </button>
+        <div id="multiplosResultado"></div>
+        <div id="somaResultado"></div>
+        
+
+         <hr>
+
+
+        
+        <!-- Atividade 3: Números pares 
+Crie um programa que leia dois números: um valor inicial e um final. Em seguida, use a estrutura FOR todos os números entre eles, que seja par.
+ --> 
+        <h1>Números Pares</h1>
+
+        <input type="number" id="valorInicial" placeholder="Valor inicial">
+
+        <input type="number" id="valorFinal" placeholder="Valor final">
+
+        <button onclick="mostrarPares()">
+            Mostrar Pares
+        </button>
+
+        <div id="paresResultado"></div>
+        <hr>
+
+         <!-- Atividade 4: Contagem regressiva Atividade 3: Números pares 
+Crie um programa que leia dois números: um valor inicial e um final. Em seguida, use a estrutura FOR todos os números entre eles, que seja primo.
+  --> 
+          <h1>Números Primos</h1>
+  
+          <input type="number" id="valorInicialPrimo" placeholder="Valor inicial">
+  
+          <input type="number" id="valorFinalPrimo" placeholder="Valor final">
+  
+          <button onclick="mostrarPrimos()">
+              Mostrar Primos
+          </button>
+  
+          <div id="primosResultado"></div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
