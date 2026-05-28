@@ -1,0 +1,97 @@
+<!-- A lanchonete DevBurger precisa de um sistema simples para calcular pedidos feitos pelos clientes.
+Seu desafio é criar uma função em JavaScript capaz de calcular o valor total da compra, aplicar
+descontos e exibir um resumo do pedido.
+�� Objetivo:
+Criar uma função chamada calcularPedido()
+Ela deve receber a quantidade de:
+● hambúrgueres
+● batatas
+● refrigerantes
+
+�� Cardápio Oficial
+Produto Valor
+�� Hambúrguer R$18
+�� Batata R$10
+�� Refrigerante R$7
+
+�� Regras do Sistema
+✅ O programa deve:
+● calcular o valor total do pedido
+● aplicar desconto automaticamente
+● mostrar um resumo completo na tela
+
+�� Regras de Desconto
+Valor da compra Desconto
+acima de R$50 10%
+acima de R$100 15% -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBurger</title>
+</head>
+<body>
+
+  <h1>🍔 DevBurger</h1>
+
+  <div id="resultado"></div>
+
+  <script>
+
+    function calcularPedido() {
+
+      // Quantidades digitadas direto no código
+      let hamburgueres = 3;
+      let batatas = 8;
+      let refrigerantes = 8;
+
+      // Valores dos produtos
+      let valorHamburguer = 18;
+      let valorBatata = 10;
+      let valorRefrigerante = 7;
+
+      // Total da compra
+      let total =
+        (hamburgueres * valorHamburguer) +
+        (batatas * valorBatata) +
+        (refrigerantes * valorRefrigerante);
+
+      // Desconto
+      let desconto = 0;
+
+      if (total > 100) {
+        desconto = total * 0.15;
+      }
+      else if (total > 50) {
+        desconto = total * 0.10;
+      }
+
+      // Valor final
+      let valorFinal = total - desconto;
+
+      // Mostrar resultado
+      document.getElementById("resultado").innerHTML = `
+        <h2>Resumo do Pedido</h2>
+
+        <p>🍔 Hambúrgueres: ${hamburgueres}</p>
+        <p>🍟 Batatas: ${batatas}</p>
+        <p>🥤 Refrigerantes: ${refrigerantes}</p>
+
+        <hr>
+
+        <p>Total: R$ ${total.toFixed(2)}</p>
+        <p>Desconto: R$ ${desconto.toFixed(2)}</p>
+
+        <p><strong>Valor Final:
+        R$ ${valorFinal.toFixed(2)}</strong></p>
+      `;
+    }
+
+    // Executa automaticamente ao abrir a página
+    calcularPedido();
+
+  </script>
+
+</body>
+</html>
