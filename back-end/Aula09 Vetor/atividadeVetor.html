@@ -1,0 +1,46 @@
+<!-- somar todas os valorese de um vetor -->
+<script>
+  let numeros = [5, 8, 4, 6, 7];
+  let soma = 0;
+  for (let i = 0; i < numeros.length; i++) {
+    soma += numeros[i];
+  }
+  document.write(`A soma dos números é: ${soma}`);
+  document.write("<hr>");
+
+  // Exercício 2 – Mostrar nomes com saudação Dado o vetor com nomes, imprima uma mensagem personalizada para cada nome.
+ 
+let nomes = ["Ana", "Lucas", "Beatriz"];
+let nomeSorteado = nomes[Math.floor(Math.random() * nomes.length)];
+  switch (nomeSorteado) {
+    case nomes[0]:
+      document.write(`Olá, ${nomeSorteado}! Como esta sua mão? Bem-vinda ao curso de JavaScript!<br>`);
+      break;
+    case nomes[1]:
+      document.write(`Olá, ${nomeSorteado}! Que bom ter você no curso de JavaScript!<br>`);
+      break;
+    case nomes[2]:
+      document.write(`Olá, ${nomeSorteado}! faz tempo que você não aparece! Bem-vinda ao curso de JavaScript!<br>`);
+      break;
+    default:
+      document.write(`Olá, ${nomeSorteado}! Bem-vindo ao curso de JavaScript!<br>`);
+  }
+  document.write("<hr>");
+
+  // Exercício 3 – Contar quantos números são maiores que 5 Dado o vetor abaixo, conte e mostre quantos números são maiores que 5.
+let valores = [3, 7, 1, 9, 4, 6];
+
+let contador = 0;
+for (let i = 0; i < valores.length; i++) {
+  if (valores[i] > 5) {
+    contador++;
+  }
+}
+document.write(`Existem ${contador} números maiores que 5 no vetor.`);
+
+
+
+
+
+
+</script>
