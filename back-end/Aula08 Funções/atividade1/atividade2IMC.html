@@ -1,0 +1,75 @@
+<!-- Atividade 2 — Calculadora de IMC Fitness
+Uma academia quer criar um sistema para calcular automaticamente o IMC dos alunos.
+Você deverá desenvolver uma função que calcule o índice de massa corporal e informe a
+classificação da pessoa.
+
+�� Objetivo
+Criar uma função chamada: calcularIMC()
+Ela deve receber:
+● nome
+● peso
+● altura
+
+�� Fórmula do IMC
+IMC=pesoaltura2IMC = \frac{peso}{altura^2}IMC=altura2peso​
+
+�� Tabela de Classificação
+
+IMC Resultado
+abaixo de 18.5 Abaixo do peso
+18.5 até 24.9 Peso normal
+25 até 29.9 Sobrepeso
+30 ou mais Obesidade
+  -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC Fitness</title>
+</head>
+<body>
+
+    <h2>Calculadora de IMC Fitness</h2>
+
+    <label>Nome:</label>
+    <input type="text" id="nome"><br><br>
+
+    <label>Peso (kg):</label>
+    <input type="number" id="peso" step="0.1"><br><br>
+
+    <label>Altura (m):</label>
+    <input type="number" id="altura" step="0.01"><br><br>
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+
+    <h3 id="resultado"></h3>
+
+    <script>
+        function calcularIMC() {
+            let nome = document.getElementById("nome").value;
+            let peso = parseFloat(document.getElementById("peso").value);
+            let altura = parseFloat(document.getElementById("altura").value);
+
+            let imc = peso / (altura * altura);
+            let classificacao = "";
+
+            if (imc < 18.5) {
+                classificacao = "Abaixo do peso";
+            } else if (imc <= 24.9) {
+                classificacao = "Peso normal";
+            } else if (imc <= 29.9) {
+                classificacao = "Sobrepeso";
+            } else {
+                classificacao = "Obesidade";
+            }
+
+            document.getElementById("resultado").innerHTML =
+                nome + ", seu IMC é " + imc.toFixed(2) +
+                ". Classificação: " + classificacao;
+        }
+    </script>
+
+</body>
+</html>
